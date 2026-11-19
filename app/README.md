@@ -146,17 +146,17 @@ graph TD
 
 ---
 
-## 👥 Contributors & Team
+## 👥 Team Members & Roles
 
 Contributions to **NeuroGrip App** are tracked across development, firmware, and clinical diagnostics:
 
-| Avatar | Contributor | GitHub Profile | Role / Area |
+| Avatar | Team Member | GitHub Profile | Role & Area |
 | :---: | :--- | :--- | :--- |
-| <img src="https://github.com/nandu123-1.png" width="48" style="border-radius:50%"/> | **Nandu** | [@nandu123-1](https://github.com/nandu123-1) | Project Lead, Mobile Architecture, On-Device AI Engine & CAD Enclosure |
-| <img src="https://github.com/vikasgupta20.png" width="48" style="border-radius:50%"/> | **Vikas Gupta** | [@vikasgupta20](https://github.com/vikasgupta20) | Core Contributor, Peripheral Integration & App Development |
-| <img src="https://github.com/spurthireddy280.png" width="48" style="border-radius:50%"/> | **Spurthi Reddy** | [@spurthireddy280](https://github.com/spurthireddy280) | Core Contributor, Clinical Analytics & Biofeedback Diagnostics |
-| <img src="https://github.com/meela-amrutha.png" width="48" style="border-radius:50%"/> | **Meela Amrutha** | [@meela-amrutha](https://github.com/meela-amrutha) | Core Contributor, Frontend & UI/UX Development |
-| <img src="https://github.com/siddarthaanishetty19-pixel.png" width="48" style="border-radius:50%"/> | **Siddartha Anishetty** | [@siddarthaanishetty19-pixel](https://github.com/siddarthaanishetty19-pixel) | Core Contributor, Hardware Telemetry & Testing |
+| <img src="https://github.com/vikasgupta20.png" width="48" style="border-radius:50%"/> | **Addagulla Vikas** | [@vikasgupta20](https://github.com/vikasgupta20) | Team Lead, App Development |
+| <img src="https://github.com/spurthireddy280.png" width="48" style="border-radius:50%"/> | **Challa Spurthi** | [@spurthireddy280](https://github.com/spurthireddy280) | Presenter, Embedded Systems |
+| <img src="https://github.com/meela-amrutha.png" width="48" style="border-radius:50%"/> | **Meela Amrutha** | [@meela-amrutha](https://github.com/meela-amrutha) | Hardware, UI/UX Design |
+| <img src="https://github.com/siddarthaanishetty19-pixel.png" width="48" style="border-radius:50%"/> | **Anishetty Siddartha** | [@siddarthaanishetty19-pixel](https://github.com/siddarthaanishetty19-pixel) | Research, Hardware |
+| <img src="https://github.com/nandu123-1.png" width="48" style="border-radius:50%"/> | **Palla Geetesh Nandan** | [@nandu123-1](https://github.com/nandu123-1) | 3D Modelling, ML Training |
 
 Track detailed individual commit metrics, lines of code, and frequency graphs on the official [GitHub Contributors Insight](https://github.com/nandu123-1/NeuroGrip-App/graphs/contributors).
 

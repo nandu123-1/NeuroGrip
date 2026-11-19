@@ -169,13 +169,13 @@ While writing or tracing on the Writing Pad, the Smart Pen monitors force and tr
 
 ---
 
-## 👥 Team Members & Collaborators
+## 👥 Team Members & Roles
 
-- **Nandakishore ([@nandu123-1](https://github.com/nandu123-1))** — Project Lead & Firmware/AI Architecture
-- **Vikas Gupta ([@vikasgupta20](https://github.com/vikasgupta20))** — Embedded Hardware & BLE Protocol
-- **Spurthi Reddy ([@spurthireddy280](https://github.com/spurthireddy280))** — Mobile UI/UX & Clinical Analytics
-- **Siddartha Anishetty ([@siddarthaanishetty19-pixel](https://github.com/siddarthaanishetty19-pixel))** — Mechanical CAD & 3D Prototyping
-- **Amrutha Meela ([@meela-amrutha](https://github.com/meela-amrutha))** — Machine Learning & Biometric Validation
+- **Addagulla Vikas ([@vikasgupta20](https://github.com/vikasgupta20))** — Team Lead, App Development
+- **Challa Spurthi ([@spurthireddy280](https://github.com/spurthireddy280))** — Presenter, Embedded Systems
+- **Meela Amrutha ([@meela-amrutha](https://github.com/meela-amrutha))** — Hardware, UI/UX Design
+- **Anishetty Siddartha ([@siddarthaanishetty19-pixel](https://github.com/siddarthaanishetty19-pixel))** — Research, Hardware
+- **Palla Geetesh Nandan ([@nandu123-1](https://github.com/nandu123-1))** — 3D Modelling, ML Training
 
 ---
 
