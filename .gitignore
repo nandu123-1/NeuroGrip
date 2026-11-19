@@ -1,0 +1,47 @@
+# Node & JavaScript dependencies
+node_modules/
+.npm/
+.yarn/
+*.log
+
+# React Native & Expo
+.expo/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+
+# Android build outputs
+app/android/build/
+app/android/app/build/
+app/android/.gradle/
+app/android/app/.cxx/
+app/android/.kotlin/
+*.keystore
+!app/android/app/debug.keystore
+
+# PlatformIO & Embedded
+.pio/
+.pioenvs/
+.piolibdeps/
+*.hex
+*.elf
+
+# Python & Data Science
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+*.ipynb_checkpoints/
+
+# Operating System & IDEs
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.bak
+*~

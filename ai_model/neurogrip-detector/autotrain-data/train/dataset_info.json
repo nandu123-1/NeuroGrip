@@ -1,0 +1,528 @@
+{
+  "citation": "",
+  "description": "",
+  "features": {
+    "wrist_mvmnt_x_median": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "wrist_mvmnt_x_quartile_range": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "wrist_mvmnt_x_mean": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "wrist_mvmnt_x_min": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "wrist_mvmnt_x_max": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "wrist_mvmnt_x_stdev": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "wrist_mvmnt_y_median": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "wrist_mvmnt_y_quartile_range": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "wrist_mvmnt_y_mean": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "wrist_mvmnt_y_min": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "wrist_mvmnt_y_max": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "wrist_mvmnt_y_stdev": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "wrist_mvmnt_dist_median": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "wrist_mvmnt_dist_quartile_range": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "wrist_mvmnt_dist_mean": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "wrist_mvmnt_dist_min": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "wrist_mvmnt_dist_max": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "wrist_mvmnt_dist_stdev": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "aperiodicity_denoised": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "aperiodicity_trimmed": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "periodEntropy_denoised": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "periodEntropy_trimmed": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "periodVarianceNorm_denoised": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "periodVarianceNorm_trimmed": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "numInterruptions_denoised": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "numInterruptions_trimmed": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "numFreeze_denoised": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "numFreeze_trimmed": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "maxFreezeDuration_denoised": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "maxFreezeDuration_trimmed": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "period_median_denoised": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "period_quartile_range_denoised": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "period_mean_denoised": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "period_min_denoised": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "period_max_denoised": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "period_stdev_denoised": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "period_median_trimmed": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "period_quartile_range_trimmed": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "period_mean_trimmed": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "period_min_trimmed": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "period_max_trimmed": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "period_stdev_trimmed": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "period_entropy_denoised": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "period_entropy_trimmed": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "frequency_median_denoised": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "frequency_quartile_range_denoised": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "frequency_mean_denoised": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "frequency_min_denoised": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "frequency_max_denoised": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "frequency_stdev_denoised": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "frequency_median_trimmed": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "frequency_quartile_range_trimmed": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "frequency_mean_trimmed": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "frequency_min_trimmed": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "frequency_max_trimmed": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "frequency_stdev_trimmed": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "frequency_lr_fitness_r2_denoised": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "frequency_lr_slope_denoised": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "frequency_lr_fitness_r2_trimmed": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "frequency_lr_slope_trimmed": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "frequency_fit_min_degree_denoised": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "frequency_fit_min_degree_trimmed": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "amplitude_median_denoised": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "amplitude_quartile_range_denoised": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "amplitude_mean_denoised": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "amplitude_min_denoised": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "amplitude_max_denoised": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "amplitude_stdev_denoised": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "amplitude_entropy_denoised": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "amplitude_median_trimmed": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "amplitude_quartile_range_trimmed": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "amplitude_mean_trimmed": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "amplitude_min_trimmed": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "amplitude_max_trimmed": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "amplitude_stdev_trimmed": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "amplitude_entropy_trimmed": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "amplitude_decrement_fitness_r2_denoised": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "amplitude_decrement_slope_denoised": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "amplitude_decrement_end_to_mean_denoised": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "amplitude_decrement_fit_min_degree_denoised": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "amplitude_decrement_last_to_first_half_denoised": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "amplitude_decrement_fitness_r2_trimmed": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "amplitude_decrement_slope_trimmed": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "amplitude_decrement_end_to_mean_trimmed": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "amplitude_decrement_fit_min_degree_trimmed": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "amplitude_decrement_last_to_first_half_trimmed": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "num_peaks_trimmed": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "num_peaks_denoised": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "num_interruptions_norm_denoised": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "num_freeze_norm_denoised": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "num_interruptions_norm_trimmed": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "num_freeze_norm_trimmed": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "speed_median_denoised": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "speed_quartile_range_denoised": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "speed_mean_denoised": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "speed_min_denoised": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "speed_max_denoised": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "speed_stdev_denoised": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "speed_median_trimmed": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "speed_quartile_range_trimmed": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "speed_mean_trimmed": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "speed_min_trimmed": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "speed_max_trimmed": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "speed_stdev_trimmed": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "acceleration_median_denoised": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "acceleration_quartile_range_denoised": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "acceleration_mean_denoised": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "acceleration_min_denoised": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "acceleration_max_denoised": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "acceleration_stdev_denoised": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "acceleration_median_trimmed": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "acceleration_quartile_range_trimmed": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "acceleration_mean_trimmed": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "acceleration_min_trimmed": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "acceleration_max_trimmed": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "acceleration_stdev_trimmed": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "Rating1": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "Rating2": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "Rating3": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "Rating4": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "age": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "Rating": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "Rating5": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "kumo_anomaly_score": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "kumo_latent_0": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "kumo_latent_1": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "kumo_latent_2": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "kumo_latent_3": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "autotrain_id": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "autotrain_label": {
+      "dtype": "int64",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": ""
+}
