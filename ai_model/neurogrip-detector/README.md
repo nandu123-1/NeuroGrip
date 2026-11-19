@@ -96,3 +96,10 @@ calibrated_threshold = meta["calibrated_threshold"]
 ## 🔗 Integrated Ecosystem
 - **GitHub Repository:** [nandu123-1/NeuroGrip](https://github.com/nandu123-1/NeuroGrip)
 - **Dataset Hub:** [Sunraku02/neurogrip-dataset](https://huggingface.co/datasets/Sunraku02/neurogrip-dataset)
+
+## 👥 NeuroGrip Team & Credits
+- **Addagulla Vikas** ([@vikasgupta20](https://github.com/vikasgupta20)) — Team Lead, App Development
+- **Challa Spurthi** ([@spurthireddy280](https://github.com/spurthireddy280)) — Presenter, Embedded Systems
+- **Meela Amrutha** ([@meela-amrutha](https://github.com/meela-amrutha)) — Hardware, UI/UX Design
+- **Anishetty Siddartha** ([@siddarthaanishetty19-pixel](https://github.com/siddarthaanishetty19-pixel)) — Research, Hardware
+- **Palla Geetesh Nandan** ([@nandu123-1](https://github.com/nandu123-1) / [@Sunraku02](https://huggingface.co/Sunraku02)) — 3D Modelling, ML Training
