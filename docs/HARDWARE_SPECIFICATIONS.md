@@ -12,7 +12,7 @@ This document outlines the component pinouts, schematics, electrical characteris
 - **Motion Sensor:** InvenSense MPU-6050 (GY-521 breakout, 3-axis accelerometer + 3-axis gyroscope @ 400 kHz I2C).
 - **OLED Display:** SSD1306 0.96-inch monochrome I2C OLED ($128 \times 64$ pixels, address `0x3C`).
 - **Visual Biofeedback:** Adafruit WS2812B 8-Pixel Addressable NeoPixel Ring (5050 RGB SMD LEDs).
-- **Acoustic & Tactile Feedback:** 8Ω 0.5W Miniature Dynamic Speaker with PAM8403/PAM8302 Class-D Audio Driver + 3V DC Haptic Vibration Motor.
+- **Acoustic & Tactile Feedback:** 3V-5V Micro Piezo Buzzer (high-pitch kinetic tremor alert) + 3V DC Miniature Haptic Vibration Motor.
 - **Power:** 3.7V 350mAh–500mAh LiPo rechargeable cell with onboard MCP73831 battery charge controller.
 
 ### Pinout Table (Seeed XIAO nRF52840 Sense)
@@ -21,7 +21,7 @@ This document outlines the component pinouts, schematics, electrical characteris
 | :--- | :--- | :--- | :--- |
 | **A0 / D0** | Pin 1 | Interlink FSR 408 + 10kΩ Pull-down | Analog Grip & Pinch Force Input (12-bit ADC) |
 | **D1** | Pin 2 | WS2812B NeoPixel Ring DIN | Single-wire High-speed Timing @ 800 kHz |
-| **D2** | Pin 3 | Mini Speaker Audio Driver (PAM8403 PWM/DAC) | High-Fidelity Audio Alert / Tone Output |
+| **D2** | Pin 3 | Micro Piezo Buzzer (+) | Discrete Tone / Spasm Audio Alert |
 | **D3** | Pin 4 | DC Micro Haptic Motor Driver | Discrete PWM Tactile Vibration Alert |
 | **D4 / SDA** | Pin 5 | SSD1306 OLED SDA & MPU-6050 SDA | Shared Hardware I2C Data (`Wire`) |
 | **D5 / SCL** | Pin 6 | SSD1306 OLED SCL & MPU-6050 SCL | Shared Hardware I2C Clock (`400 kHz`) |
@@ -37,9 +37,10 @@ This document outlines the component pinouts, schematics, electrical characteris
 
 ### Component Bill of Materials (BOM)
 - **Main Microcontroller:** ESP32 DevKit V1 (Tensilica Xtensa Dual-Core 240 MHz, 520KB SRAM, 4MB SPI Flash).
-- **Display Module:** Waveshare 3.5-inch RPi LCD (F) IPS Screen (ST7796S Driver, $480 \times 320$ resolution, 4-Wire SPI @ 40 MHz).
-- **Touch Controller:** Goodix GT911 Capacitive Multi-touch Digitizer (I2C interface, hardware reset & interrupt lines).
-- **Interconnect:** 13-Pin GH1.25 cable assembly or direct 40-pin header junction.
+- **Display Module:** 7.0-inch 800x480 TFT LCD Display Module (4-Wire SPI / Parallel Interface).
+- **Touch Controller:** 4-Wire Resistive Touch Digitizer (XPT2046 / ADS7846 SPI Controller).
+- **Audio Output:** 4Ω 3W–5W Full-Range Multimedia Speaker (40mm–50mm dynamic cone, not mini) + PAM8403 3W Class-D Audio Amplifier.
+- **Interconnect:** 16-Pin / 20-Pin Ribbon Cable Harness.
 
 ### Pinout Table (ESP32 DevKit V1 to Waveshare 3.5" (F) LCD)
 
