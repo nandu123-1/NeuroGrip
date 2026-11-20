@@ -8,20 +8,21 @@ This document outlines the component pinouts, schematics, electrical characteris
 
 ### Component Bill of Materials (BOM)
 - **Main Microcontroller:** Seeed Studio XIAO nRF52840 Sense (64 MHz ARM Cortex-M4F, Bluetooth 5.0, 1MB Flash, 256KB RAM).
-- **Force Sensor:** Interlink Electronics FSR 402 ($0.5''$ circular active sensing area, $0.1\text{N} - 10\text{N}$ dynamic range).
+- **Force Sensor:** Interlink Electronics FSR 408 (Linear Strip Active Sensing Area, $0.1\text{N} - 10\text{N}$ continuous grip & tip pressure range).
 - **Motion Sensor:** InvenSense MPU-6050 (GY-521 breakout, 3-axis accelerometer + 3-axis gyroscope @ 400 kHz I2C).
 - **OLED Display:** SSD1306 0.96-inch monochrome I2C OLED ($128 \times 64$ pixels, address `0x3C`).
 - **Visual Biofeedback:** Adafruit WS2812B 8-Pixel Addressable NeoPixel Ring (5050 RGB SMD LEDs).
-- **Tactile Biofeedback:** 3V Miniature Piezoelectric Transducer / DC Haptic Vibration Motor.
-- **Power:** 3.7V 350mAh LiPo rechargeable cell with onboard MCP73831 battery charge controller.
+- **Acoustic & Tactile Feedback:** 8Ω 0.5W Miniature Dynamic Speaker with PAM8403/PAM8302 Class-D Audio Driver + 3V DC Haptic Vibration Motor.
+- **Power:** 3.7V 350mAh–500mAh LiPo rechargeable cell with onboard MCP73831 battery charge controller.
 
 ### Pinout Table (Seeed XIAO nRF52840 Sense)
 
 | Pin Name | Physical Pin | Connected Component | Function / Interface |
 | :--- | :--- | :--- | :--- |
-| **A0 / D0** | Pin 1 | Interlink FSR 402 + 10kΩ Pull-down | Analog Pinch Force Input (12-bit ADC) |
+| **A0 / D0** | Pin 1 | Interlink FSR 408 + 10kΩ Pull-down | Analog Grip & Pinch Force Input (12-bit ADC) |
 | **D1** | Pin 2 | WS2812B NeoPixel Ring DIN | Single-wire High-speed Timing @ 800 kHz |
-| **D2** | Pin 3 | Piezo Haptic / Buzzer (+) | Discrete PWM / GPIO Haptic Output |
+| **D2** | Pin 3 | Mini Speaker Audio Driver (PAM8403 PWM/DAC) | High-Fidelity Audio Alert / Tone Output |
+| **D3** | Pin 4 | DC Micro Haptic Motor Driver | Discrete PWM Tactile Vibration Alert |
 | **D4 / SDA** | Pin 5 | SSD1306 OLED SDA & MPU-6050 SDA | Shared Hardware I2C Data (`Wire`) |
 | **D5 / SCL** | Pin 6 | SSD1306 OLED SCL & MPU-6050 SCL | Shared Hardware I2C Clock (`400 kHz`) |
 | **LED_RED** | Internal P11 | Onboard Multi-Color Red LED | Low Active Overgrip Visual Indicator |

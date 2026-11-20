@@ -1,0 +1,134 @@
+================================================================================
+NEUROGRIP ECOSYSTEM - REAL COMPONENT PRICES & BILL OF MATERIALS (BOM)
+Updated Configuration:
+  • Force Sensor: Interlink FSR 408 (Linear Strip Force Sensor) instead of FSR 402
+  • Audio Output: Mini Speaker + Class-D Driver instead of Piezo Buzzer
+Date: 2026-11-20
+Currency: Indian Rupee (INR ₹) and US Dollar (USD $)
+Verified against: Robu.in, ElectronicsComp, Hubtronics, Mouser/DigiKey India
+================================================================================
+
+--------------------------------------------------------------------------------
+1. SUBSYSTEM 1: NEUROGRIP SMART PEN BOM
+--------------------------------------------------------------------------------
+
+1. Main Microcontroller Board:
+   • Model: Seeed Studio XIAO nRF52840 Sense
+   • Specs: Bluetooth 5.0, 64MHz ARM Cortex-M4F, onboard 6-DOF IMU & PDM mic
+   • Price: ₹2,199 – ₹2,349 ($26.50 – $28.20)
+   • Source: Robu.in / Robocraze
+
+2. Grip & Tip Force Sensor (UPGRADED to FSR 408):
+   • Model: FSR 408 Linear Strip Force Sensing Resistor (100mm–150mm pen grip strip)
+   • Specs: Continuous pressure strip measuring multi-finger grip & tip force
+   • Price: 
+     - Standard Pen-Grip Strip Variant (Robu / Soushine FSR408): ₹269 – ₹350 ($3.25 – $4.20)
+     - Extended 24" Genuine Interlink FSR 408 (DigiKey/Mouser): ₹1,650 – ₹2,200 ($19.80 – $26.50)
+   • Selected for BOM: ₹269 – ₹350 ($3.25 – $4.20)
+
+3. Audio Feedback Unit (UPGRADED to Mini Speaker):
+   • Model: 8 Ohm 0.5W – 1W Micro Dynamic Speaker (15mm – 28mm slim profile)
+   • Driver: PAM8403 / PAM8302 3.3V/5V Mini Class-D Audio Amplifier Module
+   • Specs: Real acoustic voice alerts, tonal guidance, and clear audio feedback
+   • Price:
+     - 8Ω 0.5W Mini Speaker: ₹45 – ₹60 ($0.55 – $0.72)
+     - PAM8403 / PAM8302 Mini Amplifier Board: ₹54 – ₹70 ($0.65 – $0.85)
+     - Combined Sub-Assembly: ₹99 – ₹130 ($1.20 – $1.57)
+   • Source: ElectronicsComp / Robu.in
+
+4. Visual Biofeedback:
+   • Model: WS2812B 8-Pixel RGB NeoPixel Ring (5050 Addressable SMD LEDs)
+   • Specs: Green (optimal zone), Red (overgrip tension), Amber (tremor detected)
+   • Price: ₹130 – ₹180 ($1.57 – $2.17)
+   • Source: Robu.in / QuartzComponents
+
+5. Secondary / Aux IMU Sensor:
+   • Model: InvenSense MPU-6050 (GY-521 breakout board)
+   • Specs: 3-axis accelerometer + 3-axis gyroscope @ 400kHz I2C
+   • Price: ₹140 – ₹190 ($1.69 – $2.29)
+   • Source: QuartzComponents / ElectronicsComp
+
+6. Pen OLED Telemetry Display:
+   • Model: SSD1306 0.96-inch Monochrome I2C OLED (128x64 pixels, 3.3V)
+   • Specs: Live pinch force (grams), battery status, connection state
+   • Price: ₹180 – ₹240 ($2.17 – $2.89)
+   • Source: ElectronicsComp / Amazon India
+
+7. Tactile Haptic Feedback:
+   • Model: 3V Miniature Coin Vibration Motor (10mm DC Micro Haptic)
+   • Specs: Silent tactile vibration alerts for overgrip spasm
+   • Price: ₹45 – ₹75 ($0.54 – $0.90)
+   • Source: Robu.in / ElectronicsComp
+
+8. Power & Battery:
+   • Model: 3.7V 350mAh – 500mAh LiPo Rechargeable Cell with PCM protection
+   • Price: ₹240 – ₹320 ($2.89 – $3.86)
+   • Source: Robu.in / Robocraze
+
+9. Passives, Power Switch & Wiring:
+   • Specs: 10kΩ pull-down resistor, micro slide switch, 30AWG silicone hookup wires
+   • Price: ₹50 – ₹80 ($0.60 – $0.96)
+
+10. Ergonomic Enclosure:
+    • Specs: Custom 3D Printed Smart Pen Shell (PLA / Tough Resin)
+    • Price: ₹250 – ₹400 ($3.00 – $4.82)
+    • Source: Local 3D Printing Service / DIY
+
+--------------------------------------------------------------------------------
+SMART PEN SUBTOTAL: ₹3,602 – ₹4,314 (~$43.40 – ~$52.00)
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+2. SUBSYSTEM 2: NEUROGRIP WRITING PAD BOM
+--------------------------------------------------------------------------------
+
+1. Main Microcontroller:
+   • Model: ESP32 DevKit V1 (30-pin / 38-pin ESP-WROOM-32)
+   • Specs: Dual-Core 240MHz Xtensa, 520KB SRAM, 4MB Flash, Wi-Fi & BLE
+   • Price: ₹340 – ₹450 ($4.10 – $5.42)
+   • Source: ElectronicsComp / Robu.in
+
+2. Display Module & Digitizer:
+   • Model: Waveshare 3.5-inch RPi LCD (F) IPS Display
+   • Controller: ST7796S Driver (480x320 SPI @ 40MHz)
+   • Digitizer: Goodix GT911 Capacitive Multi-Touch Controller (I2C)
+   • Price: ₹1,950 – ₹2,280 ($23.50 – $27.47)
+   • Source: Hubtronics / Zbotic / Robu.in
+
+3. Interconnect Cable Harness:
+   • Model: 13-Pin GH1.25 to DuPont Cable Assembly (shielded SPI & I2C lines)
+   • Price: ₹90 – ₹150 ($1.08 – $1.81)
+   • Source: Robu.in / ElectronicsComp
+
+4. Power Supply & Decoupling:
+   • Specs: 5V 2A USB-C Cable + 10µF Electrolytic & 100nF Ceramic Capacitors
+   • Price: ₹90 – ₹140 ($1.08 – $1.69)
+   • Source: Amazon India / Local Electronics
+
+5. Enclosure & Desk Mount:
+   • Specs: Custom 3D Printed Pad Base & Bezel (PLA / PETG)
+   • Price: ₹350 – ₹550 ($4.22 – $6.63)
+   • Source: Local 3D Printing Service / DIY
+
+--------------------------------------------------------------------------------
+WRITING PAD SUBTOTAL: ₹2,820 – ₹3,570 (~$34.00 – ~$43.00)
+--------------------------------------------------------------------------------
+
+
+================================================================================
+TOTAL SYSTEM PROTOTYPE COST SUMMARY
+================================================================================
+
+  • NeuroGrip Smart Pen (with FSR 408 & Mini Speaker): ₹3,602 – ₹4,314 ($43 – $52)
+  • NeuroGrip Writing Pad:                             ₹2,820 – ₹3,570 ($34 – $43)
+  ------------------------------------------------------------------------------
+  TOTAL COMPLETE ECOSYSTEM PROTOTYPE COST:             ₹6,422 – ₹7,884 ($77 – $95)
+
+================================================================================
+MASS PRODUCTION OPTIMIZATION (100+ UNITS):
+  • Replacing individual breakout boards with custom integrated SMD PCB:
+    - Smart Pen unit drops to: ~₹1,300 – ₹1,600 ($16 – $19)
+    - Writing Pad unit drops to: ~₹1,200 – ₹1,400 ($14 – $17)
+  • Total Mass-Produced System Cost: ~₹2,500 – ₹3,000 ($30 – $36)
+================================================================================
