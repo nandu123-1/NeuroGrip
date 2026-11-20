@@ -40,6 +40,7 @@ This document outlines the component pinouts, schematics, electrical characteris
 - **Display Module:** 7.0-inch 800x480 TFT LCD Display Module (4-Wire SPI / Parallel Interface).
 - **Touch Controller:** 4-Wire Resistive Touch Digitizer (XPT2046 / ADS7846 SPI Controller).
 - **Audio Output:** 4Ω 3W–5W Full-Range Multimedia Speaker (40mm–50mm dynamic cone, not mini) + PAM8403 3W Class-D Audio Amplifier.
+- **Power & Battery:** 3.7V 3000mAh Rechargeable Li-ion/LiPo Battery with TP4056 Type-C Charging & 5V Step-Up Boost Module.
 - **Interconnect:** 16-Pin / 20-Pin Ribbon Cable Harness.
 
 ### Pinout Table (ESP32 DevKit V1 to Waveshare 3.5" (F) LCD)

@@ -1,27 +1,28 @@
 NEUROGRIP COMPONENT PRICES
 
 --- SMART PEN ---
-Seeed Studio XIAO nRF52840 Sense - Rs 2,299 ($27.50)
-Interlink FSR 408 Strip Force Sensor - Rs 299 ($3.60)
-3V-5V Micro Piezo Buzzer - Rs 25 ($0.30)
-WS2812B 8-Pixel RGB LED Ring - Rs 150 ($1.80)
-MPU-6050 6-DOF IMU Sensor - Rs 160 ($1.90)
-SSD1306 0.96 inch OLED Display - Rs 210 ($2.50)
-3V Micro Haptic Vibration Motor - Rs 60 ($0.70)
-3.7V LiPo Battery (400mAh) - Rs 280 ($3.40)
-Resistors, Switch & Wiring - Rs 60 ($0.70)
-3D Printed Pen Body - Rs 300 ($3.60)
+Seeed Studio XIAO nRF52840 Sense - Rs 2,299
+Interlink FSR 408 Strip Force Sensor - Rs 299
+3V-5V Micro Piezo Buzzer - Rs 25
+WS2812B 8-Pixel RGB LED Ring - Rs 150
+MPU-6050 6-DOF IMU Sensor - Rs 160
+SSD1306 0.96 inch OLED Display - Rs 210
+3V Micro Haptic Vibration Motor - Rs 60
+3.7V LiPo Battery (400mAh) - Rs 280
+Resistors, Switch & Wiring - Rs 60
+3D Printed Pen Body - Rs 300
 
 --- WRITING PAD ---
-ESP32 DevKit V1 - Rs 390 ($4.70)
-7.0-inch TFT LCD Display with Resistive Touch (800x480, XPT2046) - Rs 3,450 ($41.50)
-4 Ohm 3W/5W Full-Range Speaker (40-50mm, Not Mini) - Rs 120 ($1.45)
-PAM8403 3W Class-D Audio Amplifier Module - Rs 60 ($0.70)
-Ribbon Connecting Cable Harness - Rs 140 ($1.70)
-5V 2A USB-C Power Supply & Cable - Rs 140 ($1.70)
-3D Printed 7-Inch Pad Enclosure & Bezel - Rs 750 ($9.00)
+ESP32 DevKit V1 - Rs 390
+7.0-inch TFT LCD Display with Resistive Touch (800x480, XPT2046) - Rs 3,450
+3.7V 3000mAh Rechargeable Battery & Charging Module - Rs 480
+4 Ohm 3W/5W Full-Range Speaker (40-50mm, Not Mini) - Rs 120
+PAM8403 3W Class-D Audio Amplifier Module - Rs 60
+Ribbon Connecting Cable Harness - Rs 140
+USB-C Charging Cable - Rs 100
+3D Printed 7-Inch Pad Enclosure & Bezel - Rs 750
 
 --- TOTAL ---
-Smart Pen Total: Rs 3,843 ($46.00)
-Writing Pad Total: Rs 5,050 ($60.75)
-Complete System Total: Rs 8,893 ($106.75)
+Smart Pen Total: Rs 3,843
+Writing Pad Total: Rs 5,490
+Complete System Total: Rs 9,333
