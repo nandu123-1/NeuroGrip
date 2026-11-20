@@ -1,0 +1,26 @@
+NEUROGRIP COMPONENT PRICES
+
+--- SMART PEN ---
+Seeed Studio XIAO nRF52840 Sense - Rs 2,299 ($27.50)
+Interlink FSR 408 Strip Force Sensor - Rs 299 ($3.60)
+8 Ohm 0.5W Mini Speaker - Rs 50 ($0.60)
+PAM8403 Mini Audio Amplifier - Rs 60 ($0.70)
+WS2812B 8-Pixel RGB LED Ring - Rs 150 ($1.80)
+MPU-6050 6-DOF IMU Sensor - Rs 160 ($1.90)
+SSD1306 0.96 inch OLED Display - Rs 210 ($2.50)
+3V Micro Haptic Vibration Motor - Rs 60 ($0.70)
+3.7V LiPo Battery (400mAh) - Rs 280 ($3.40)
+Resistors, Switch & Wiring - Rs 60 ($0.70)
+3D Printed Pen Body - Rs 300 ($3.60)
+
+--- WRITING PAD ---
+ESP32 DevKit V1 - Rs 390 ($4.70)
+Waveshare 3.5 inch Touch LCD (ST7796S + GT911) - Rs 2,150 ($25.80)
+13-Pin GH1.25 Cable - Rs 120 ($1.40)
+USB-C Cable & Power Components - Rs 110 ($1.30)
+3D Printed Pad Enclosure - Rs 450 ($5.40)
+
+--- TOTAL ---
+Smart Pen Total: Rs 3,928 ($47.00)
+Writing Pad Total: Rs 3,220 ($38.60)
+Complete System Total: Rs 7,148 ($85.60)
