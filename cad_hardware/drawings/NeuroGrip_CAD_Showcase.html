@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NeuroGrip CAD Drawings & Engineering Blueprints</title>
+  <title>NeuroGrip CAD Drawings &amp; Round Pen Comparison</title>
   <style>
     :root {
       --bg: #0f172a;
@@ -33,8 +33,8 @@
       padding-bottom: 18px;
       margin-bottom: 24px;
     }
-    h1 { font-size: 1.55rem; font-weight: 700; letter-spacing: -0.02em; }
-    .subtitle { color: var(--muted); font-size: 0.92rem; margin-top: 4px; }
+    h1 { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.02em; }
+    .subtitle { color: var(--muted); font-size: 0.9rem; margin-top: 4px; }
     .badges { display: flex; gap: 10px; flex-wrap: wrap; }
     .badge {
       background: #0f293a;
@@ -42,7 +42,7 @@
       border: 1px solid #0284c7;
       padding: 6px 12px;
       border-radius: 999px;
-      font-size: 0.8rem;
+      font-size: 0.78rem;
       font-weight: 600;
     }
     .badge.ok {
@@ -50,15 +50,15 @@
       color: var(--green);
       border-color: #059669;
     }
-    .tabs { display: flex; gap: 10px; margin-bottom: 22px; }
+    .tabs { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 22px; }
     .tab-btn {
       background: var(--surface);
       color: var(--muted);
       border: 1px solid var(--border);
-      padding: 10px 20px;
+      padding: 10px 18px;
       border-radius: 8px;
       cursor: pointer;
-      font-size: 0.95rem;
+      font-size: 0.92rem;
       font-weight: 600;
       transition: all 0.15s ease;
     }
@@ -91,11 +91,7 @@
       font-weight: 600;
       font-size: 0.95rem;
     }
-    .card-tag {
-      font-size: 0.78rem;
-      color: var(--accent);
-      font-weight: 600;
-    }
+    .card-tag { font-size: 0.78rem; color: var(--accent); font-weight: 600; }
     .img-wrap {
       background: #0b1120;
       padding: 8px;
@@ -141,41 +137,66 @@
 <body>
   <header>
     <div>
-      <h1>NeuroGrip CAD Engineering Drawings &amp; 3D Renders</h1>
-      <div class="subtitle">BOM-Exact Dimensions &bull; Zero MPU-6050 &bull; Verified Zero Interference (0.0000 mm&sup3;) &bull; Watertight Manifold STLs</div>
+      <h1>NeuroGrip CAD Drawings &mdash; True Round Smart Pen Options + Writing Pad</h1>
+      <div class="subtitle">100% Circular Pen Designs &bull; Zero MPU-6050 &bull; Zero Interference (0.0000 mm&sup3;) &bull; Watertight Manifold STLs</div>
     </div>
     <div class="badges">
-      <span class="badge ok">Smart Pen: 162.0 &times; 30.4 &times; 18.25 mm</span>
-      <span class="badge ok">Writing Pad: 248.0 &times; 132.0 &times; 33.0 mm</span>
-      <span class="badge">MPU-6050 Removed</span>
+      <span class="badge ok">Option 1 Slim: &Oslash; 13.5 &rarr; 21.5 mm</span>
+      <span class="badge ok">Option 2 Full-BOM: &Oslash; 14.0 &rarr; 30.4 mm</span>
+      <span class="badge ok">Pad: 248 &times; 132 &times; 33 mm</span>
+      <span class="badge">Zero MPU-6050</span>
     </div>
   </header>
 
   <div class="tabs">
-    <button class="tab-btn active" onclick="showTab('pen', this)">1. Smart Pen CAD (No MPU)</button>
-    <button class="tab-btn" onclick="showTab('pad', this)">2. Writing Pad CAD (7.0&quot; Display + Speaker)</button>
-    <button class="tab-btn" onclick="showTab('all', this)">3. View All Sheets</button>
+    <button class="tab-btn active" onclick="showTab('slim', this)">1. Round Pen &mdash; Option 1: Slim (&Oslash; 13.5 &rarr; 21.5 mm)</button>
+    <button class="tab-btn" onclick="showTab('full', this)">2. Round Pen &mdash; Option 2: Full-BOM (&Oslash; 14.0 &rarr; 30.4 mm)</button>
+    <button class="tab-btn" onclick="showTab('pad', this)">3. Writing Pad (7.0&quot; Display + Speaker)</button>
+    <button class="tab-btn" onclick="showTab('all', this)">4. Compare Side-by-Side</button>
   </div>
 
-  <div id="tab-pen" class="panel active">
+  <div id="tab-slim" class="panel active">
     <div class="specs">
-      <div class="spec-item"><strong>Enclosure Dimensions</strong>162.0 &times; 30.4 &times; 18.25 mm (Two-part split @ Y=+2.8 mm)</div>
-      <div class="spec-item"><strong>MCU &amp; Sensors (Zero MPU)</strong>Seeed XIAO nRF52840 Sense (21&times;17.5&times;4.41) + FSR 408 (100&times;15&times;0.4)</div>
-      <div class="spec-item"><strong>Display, Haptics &amp; Audio</strong>Waveshare 0.96&quot; OLED (26&times;26) + Grove Motor (24&times;20&times;9.8) + Buzzer (&Oslash;12&times;9.5)</div>
-      <div class="spec-item"><strong>Power &amp; Controls</strong>WLY701635 400mAh LiPo (35&times;16&times;7) + 5mm LED + 6&times;6 Tactile Button</div>
+      <div class="spec-item"><strong>100% Round Form (Recommended)</strong>Grip &Oslash; 13.5 mm &rarr; Cylindrical Barrel &Oslash; 21.5 mm &times; 155.0 mm L</div>
+      <div class="spec-item"><strong>MCU &amp; Wrapped Grip Sensor</strong>Seeed XIAO nRF52840 Sense + Curved Conformal FSR 408 (100&times;15&times;0.4)</div>
+      <div class="spec-item"><strong>Slim Packaging Optimization</strong>Uses bare &Oslash; 10&times;2.7 mm coin motor; keeps 26&times;26 OLED off pen</div>
+      <div class="spec-item"><strong>Power &amp; Alerts</strong>WLY701635 400mAh LiPo (35&times;16&times;7) + &Oslash; 12mm Buzzer + 5mm LED + 6&times;6 Switch</div>
     </div>
     <div class="grid">
       <div class="card full">
-        <div class="card-header"><span>2D Dimensioned Orthographic Blueprint — Smart Pen</span><span class="card-tag">Click image to zoom full-screen</span></div>
-        <div class="img-wrap"><img src="cad_pen_blueprint.png" onclick="openLightbox(this.src)" alt="Smart Pen Blueprint" /></div>
+        <div class="card-header"><span>Option 1 Blueprint &mdash; Slim Round Smart Pen (&Oslash; 13.5 &rarr; 21.5 mm, No MPU)</span><span class="card-tag">Click to zoom</span></div>
+        <div class="img-wrap"><img src="cad_round_slim_blueprint.png" onclick="openLightbox(this.src)" /></div>
       </div>
       <div class="card">
-        <div class="card-header"><span>3D Assembled Exterior (Dorsal OLED/LED &amp; Ventral FSR 408)</span><span class="card-tag">Cycles Studio Render</span></div>
-        <div class="img-wrap"><img src="cad_pen_overview.png" onclick="openLightbox(this.src)" alt="Smart Pen Overview" /></div>
+        <div class="card-header"><span>Option 1 Closed Round Exterior (Top View + Wrapped Ventral FSR 408)</span><span class="card-tag">Cycles Render</span></div>
+        <div class="img-wrap"><img src="cad_round_slim_overview.png" onclick="openLightbox(this.src)" /></div>
       </div>
       <div class="card">
-        <div class="card-header"><span>3D Exploded Component Architecture (Zero MPU-6050)</span><span class="card-tag">Cycles Studio Render</span></div>
-        <div class="img-wrap"><img src="cad_pen_exploded.png" onclick="openLightbox(this.src)" alt="Smart Pen Exploded" /></div>
+        <div class="card-header"><span>Option 1 Exploded Internals (Zero MPU-6050)</span><span class="card-tag">Cycles Render</span></div>
+        <div class="img-wrap"><img src="cad_round_slim_exploded.png" onclick="openLightbox(this.src)" /></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="tab-full" class="panel">
+    <div class="specs">
+      <div class="spec-item"><strong>100% Round Form (All BOM Modules)</strong>Grip &Oslash; 14.0 mm &rarr; Circular Barrel Swell &Oslash; 30.4 mm &times; 181.5 mm L</div>
+      <div class="spec-item"><strong>Display &amp; Haptics Unchanged</strong>Waveshare 0.96&quot; OLED (26&times;26) + Full Grove Motor PCB (24&times;20&times;9.8)</div>
+      <div class="spec-item"><strong>Core &amp; Wrapped Grip Sensor</strong>Seeed XIAO nRF52840 Sense (Zero MPU) + Curved FSR 408 (100&times;15&times;0.4)</div>
+      <div class="spec-item"><strong>Power &amp; Alerts</strong>WLY701635 400mAh LiPo (35&times;16&times;7) + &Oslash; 12mm Buzzer + 5mm LED + 6&times;6 Switch</div>
+    </div>
+    <div class="grid">
+      <div class="card full">
+        <div class="card-header"><span>Option 2 Blueprint &mdash; Full-BOM Round Smart Pen (&Oslash; 14.0 &rarr; 30.4 mm, No MPU)</span><span class="card-tag">Click to zoom</span></div>
+        <div class="img-wrap"><img src="cad_round_full_blueprint.png" onclick="openLightbox(this.src)" /></div>
+      </div>
+      <div class="card">
+        <div class="card-header"><span>Option 2 Closed Round Exterior (Dorsal OLED + Wrapped FSR 408)</span><span class="card-tag">Cycles Render</span></div>
+        <div class="img-wrap"><img src="cad_round_full_overview.png" onclick="openLightbox(this.src)" /></div>
+      </div>
+      <div class="card">
+        <div class="card-header"><span>Option 2 Exploded Internals (Zero MPU-6050)</span><span class="card-tag">Cycles Render</span></div>
+        <div class="img-wrap"><img src="cad_round_full_exploded.png" onclick="openLightbox(this.src)" /></div>
       </div>
     </div>
   </div>
@@ -189,28 +210,28 @@
     </div>
     <div class="grid">
       <div class="card full">
-        <div class="card-header"><span>2D Dimensioned Orthographic Blueprint — Writing Pad</span><span class="card-tag">Click image to zoom full-screen</span></div>
-        <div class="img-wrap"><img src="cad_pad_blueprint.png" onclick="openLightbox(this.src)" alt="Writing Pad Blueprint" /></div>
+        <div class="card-header"><span>Writing Pad Blueprint &mdash; 2D Orthographic Views</span><span class="card-tag">Click to zoom</span></div>
+        <div class="img-wrap"><img src="cad_pad_blueprint.png" onclick="openLightbox(this.src)" /></div>
       </div>
       <div class="card">
-        <div class="card-header"><span>3D Assembled Console (45&deg; Chamfered Display Bezel + Speaker Grille)</span><span class="card-tag">Cycles Studio Render</span></div>
-        <div class="img-wrap"><img src="cad_pad_overview.png" onclick="openLightbox(this.src)" alt="Writing Pad Overview" /></div>
+        <div class="card-header"><span>Writing Pad Assembled Console</span><span class="card-tag">Cycles Render</span></div>
+        <div class="img-wrap"><img src="cad_pad_overview.png" onclick="openLightbox(this.src)" /></div>
       </div>
       <div class="card">
-        <div class="card-header"><span>3D Exploded Component Stack</span><span class="card-tag">Cycles Studio Render</span></div>
-        <div class="img-wrap"><img src="cad_pad_exploded.png" onclick="openLightbox(this.src)" alt="Writing Pad Exploded" /></div>
+        <div class="card-header"><span>Writing Pad Exploded Component Stack</span><span class="card-tag">Cycles Render</span></div>
+        <div class="img-wrap"><img src="cad_pad_exploded.png" onclick="openLightbox(this.src)" /></div>
       </div>
     </div>
   </div>
 
   <div id="tab-all" class="panel">
     <div class="grid">
-      <div class="card"><div class="card-header">Smart Pen — 2D Orthographic Blueprint</div><div class="img-wrap"><img src="cad_pen_blueprint.png" onclick="openLightbox(this.src)" /></div></div>
-      <div class="card"><div class="card-header">Writing Pad — 2D Orthographic Blueprint</div><div class="img-wrap"><img src="cad_pad_blueprint.png" onclick="openLightbox(this.src)" /></div></div>
-      <div class="card"><div class="card-header">Smart Pen — Exploded CAD</div><div class="img-wrap"><img src="cad_pen_exploded.png" onclick="openLightbox(this.src)" /></div></div>
-      <div class="card"><div class="card-header">Writing Pad — Exploded CAD</div><div class="img-wrap"><img src="cad_pad_exploded.png" onclick="openLightbox(this.src)" /></div></div>
-      <div class="card"><div class="card-header">Smart Pen — Assembled Exterior</div><div class="img-wrap"><img src="cad_pen_overview.png" onclick="openLightbox(this.src)" /></div></div>
-      <div class="card"><div class="card-header">Writing Pad — Assembled Console</div><div class="img-wrap"><img src="cad_pad_overview.png" onclick="openLightbox(this.src)" /></div></div>
+      <div class="card"><div class="card-header">Option 1 Slim Round Pen (&Oslash; 13.5 &rarr; 21.5 mm)</div><div class="img-wrap"><img src="cad_round_slim_overview.png" onclick="openLightbox(this.src)" /></div></div>
+      <div class="card"><div class="card-header">Option 2 Full-BOM Round Pen (&Oslash; 14.0 &rarr; 30.4 mm)</div><div class="img-wrap"><img src="cad_round_full_overview.png" onclick="openLightbox(this.src)" /></div></div>
+      <div class="card"><div class="card-header">Option 1 Slim Pen Blueprint</div><div class="img-wrap"><img src="cad_round_slim_blueprint.png" onclick="openLightbox(this.src)" /></div></div>
+      <div class="card"><div class="card-header">Option 2 Full-BOM Pen Blueprint</div><div class="img-wrap"><img src="cad_round_full_blueprint.png" onclick="openLightbox(this.src)" /></div></div>
+      <div class="card"><div class="card-header">Writing Pad Console View</div><div class="img-wrap"><img src="cad_pad_overview.png" onclick="openLightbox(this.src)" /></div></div>
+      <div class="card"><div class="card-header">Writing Pad Blueprint</div><div class="img-wrap"><img src="cad_pad_blueprint.png" onclick="openLightbox(this.src)" /></div></div>
     </div>
   </div>
 
