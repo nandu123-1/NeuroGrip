@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NeuroGrip CAD Drawings & Engineering Blueprints</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --surface: #1e293b;
+      --card: #111827;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --green: #34d399;
+      --border: #334155;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      padding: 24px 32px;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 18px;
+      margin-bottom: 24px;
+    }
+    h1 { font-size: 1.55rem; font-weight: 700; letter-spacing: -0.02em; }
+    .subtitle { color: var(--muted); font-size: 0.92rem; margin-top: 4px; }
+    .badges { display: flex; gap: 10px; flex-wrap: wrap; }
+    .badge {
+      background: #0f293a;
+      color: var(--accent);
+      border: 1px solid #0284c7;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+    .badge.ok {
+      background: #062e24;
+      color: var(--green);
+      border-color: #059669;
+    }
+    .tabs { display: flex; gap: 10px; margin-bottom: 22px; }
+    .tab-btn {
+      background: var(--surface);
+      color: var(--muted);
+      border: 1px solid var(--border);
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 0.95rem;
+      font-weight: 600;
+      transition: all 0.15s ease;
+    }
+    .tab-btn.active {
+      background: var(--accent);
+      color: #0f172a;
+      border-color: var(--accent);
+    }
+    .panel { display: none; }
+    .panel.active { display: block; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(560px, 1fr));
+      gap: 20px;
+      margin-bottom: 22px;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .card.full { grid-column: 1 / -1; }
+    .card-header {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+    .card-tag {
+      font-size: 0.78rem;
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .img-wrap {
+      background: #0b1120;
+      padding: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .img-wrap img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      cursor: zoom-in;
+      display: block;
+    }
+    .specs {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-bottom: 20px;
+      font-size: 0.88rem;
+      color: #cbd5e1;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+    }
+    .spec-item strong { color: var(--text); display: block; margin-bottom: 2px; }
+    .lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(2, 6, 23, 0.92);
+      z-index: 999;
+      padding: 24px;
+      justify-content: center;
+      align-items: center;
+      cursor: zoom-out;
+    }
+    .lightbox.open { display: flex; }
+    .lightbox img { max-width: 96vw; max-height: 94vh; border-radius: 8px; box-shadow: 0 20px 60px rgba(0,0,0,0.6); }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>NeuroGrip CAD Engineering Drawings &amp; 3D Renders</h1>
+      <div class="subtitle">BOM-Exact Dimensions &bull; Zero MPU-6050 &bull; Verified Zero Interference (0.0000 mm&sup3;) &bull; Watertight Manifold STLs</div>
+    </div>
+    <div class="badges">
+      <span class="badge ok">Smart Pen: 162.0 &times; 30.4 &times; 18.25 mm</span>
+      <span class="badge ok">Writing Pad: 248.0 &times; 132.0 &times; 33.0 mm</span>
+      <span class="badge">MPU-6050 Removed</span>
+    </div>
+  </header>
+
+  <div class="tabs">
+    <button class="tab-btn active" onclick="showTab('pen', this)">1. Smart Pen CAD (No MPU)</button>
+    <button class="tab-btn" onclick="showTab('pad', this)">2. Writing Pad CAD (7.0&quot; Display + Speaker)</button>
+    <button class="tab-btn" onclick="showTab('all', this)">3. View All Sheets</button>
+  </div>
+
+  <div id="tab-pen" class="panel active">
+    <div class="specs">
+      <div class="spec-item"><strong>Enclosure Dimensions</strong>162.0 &times; 30.4 &times; 18.25 mm (Two-part split @ Y=+2.8 mm)</div>
+      <div class="spec-item"><strong>MCU &amp; Sensors (Zero MPU)</strong>Seeed XIAO nRF52840 Sense (21&times;17.5&times;4.41) + FSR 408 (100&times;15&times;0.4)</div>
+      <div class="spec-item"><strong>Display, Haptics &amp; Audio</strong>Waveshare 0.96&quot; OLED (26&times;26) + Grove Motor (24&times;20&times;9.8) + Buzzer (&Oslash;12&times;9.5)</div>
+      <div class="spec-item"><strong>Power &amp; Controls</strong>WLY701635 400mAh LiPo (35&times;16&times;7) + 5mm LED + 6&times;6 Tactile Button</div>
+    </div>
+    <div class="grid">
+      <div class="card full">
+        <div class="card-header"><span>2D Dimensioned Orthographic Blueprint — Smart Pen</span><span class="card-tag">Click image to zoom full-screen</span></div>
+        <div class="img-wrap"><img src="cad_pen_blueprint.png" onclick="openLightbox(this.src)" alt="Smart Pen Blueprint" /></div>
+      </div>
+      <div class="card">
+        <div class="card-header"><span>3D Assembled Exterior (Dorsal OLED/LED &amp; Ventral FSR 408)</span><span class="card-tag">Cycles Studio Render</span></div>
+        <div class="img-wrap"><img src="cad_pen_overview.png" onclick="openLightbox(this.src)" alt="Smart Pen Overview" /></div>
+      </div>
+      <div class="card">
+        <div class="card-header"><span>3D Exploded Component Architecture (Zero MPU-6050)</span><span class="card-tag">Cycles Studio Render</span></div>
+        <div class="img-wrap"><img src="cad_pen_exploded.png" onclick="openLightbox(this.src)" alt="Smart Pen Exploded" /></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="tab-pad" class="panel">
+    <div class="specs">
+      <div class="spec-item"><strong>Enclosure Dimensions</strong>248.0 &times; 132.0 &times; 33.0 mm (2.8 mm walls, 2.4 mm floor, 6&times; M3 bosses)</div>
+      <div class="spec-item"><strong>7.0&quot; Display &amp; Compute</strong>Waveshare 7.0&quot; (164.9&times;107.0&times;8.0) + ESP32 DevKit V1 (51.4&times;28.5&times;15.0)</div>
+      <div class="spec-item"><strong>Acoustic Console</strong>4&Omega; 3W 2&quot; Speaker (&Oslash;52&times;24) + 37-hole grille + PAM8403 Amp (21&times;18.2&times;3.0)</div>
+      <div class="spec-item"><strong>Power System</strong>3000mAh 105050 LiPo (50&times;50&times;10) + TP4056 Type-C (26&times;17.5&times;4.5) + Slide Switch</div>
+    </div>
+    <div class="grid">
+      <div class="card full">
+        <div class="card-header"><span>2D Dimensioned Orthographic Blueprint — Writing Pad</span><span class="card-tag">Click image to zoom full-screen</span></div>
+        <div class="img-wrap"><img src="cad_pad_blueprint.png" onclick="openLightbox(this.src)" alt="Writing Pad Blueprint" /></div>
+      </div>
+      <div class="card">
+        <div class="card-header"><span>3D Assembled Console (45&deg; Chamfered Display Bezel + Speaker Grille)</span><span class="card-tag">Cycles Studio Render</span></div>
+        <div class="img-wrap"><img src="cad_pad_overview.png" onclick="openLightbox(this.src)" alt="Writing Pad Overview" /></div>
+      </div>
+      <div class="card">
+        <div class="card-header"><span>3D Exploded Component Stack</span><span class="card-tag">Cycles Studio Render</span></div>
+        <div class="img-wrap"><img src="cad_pad_exploded.png" onclick="openLightbox(this.src)" alt="Writing Pad Exploded" /></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="tab-all" class="panel">
+    <div class="grid">
+      <div class="card"><div class="card-header">Smart Pen — 2D Orthographic Blueprint</div><div class="img-wrap"><img src="cad_pen_blueprint.png" onclick="openLightbox(this.src)" /></div></div>
+      <div class="card"><div class="card-header">Writing Pad — 2D Orthographic Blueprint</div><div class="img-wrap"><img src="cad_pad_blueprint.png" onclick="openLightbox(this.src)" /></div></div>
+      <div class="card"><div class="card-header">Smart Pen — Exploded CAD</div><div class="img-wrap"><img src="cad_pen_exploded.png" onclick="openLightbox(this.src)" /></div></div>
+      <div class="card"><div class="card-header">Writing Pad — Exploded CAD</div><div class="img-wrap"><img src="cad_pad_exploded.png" onclick="openLightbox(this.src)" /></div></div>
+      <div class="card"><div class="card-header">Smart Pen — Assembled Exterior</div><div class="img-wrap"><img src="cad_pen_overview.png" onclick="openLightbox(this.src)" /></div></div>
+      <div class="card"><div class="card-header">Writing Pad — Assembled Console</div><div class="img-wrap"><img src="cad_pad_overview.png" onclick="openLightbox(this.src)" /></div></div>
+    </div>
+  </div>
+
+  <div id="lightbox" class="lightbox" onclick="this.classList.remove('open')">
+    <img id="lightbox-img" src="" alt="Full View" />
+  </div>
+
+  <script>
+    function showTab(id, btn) {
+      document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById('tab-' + id).classList.add('active');
+      btn.classList.add('active');
+    }
+    function openLightbox(src) {
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox').classList.add('open');
+    }
+  </script>
+</body>
+</html>
